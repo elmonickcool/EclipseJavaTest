@@ -6,62 +6,55 @@ public class DateFormatter {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		
-		System.out.println("Date Formatter");
+		System.out.println("***Date Formatter***");
 		
 		System.out.print("Month: ");
 		int month = s.nextInt();
 		
-		System.out.println("Day: ");
+		System.out.print("Day: ");
 		int day = s.nextInt();
 		
-		System.out.println("Year:");
+		System.out.print("Year: ");
 		int year = s.nextInt();
-		
+		System.out.println("***************");
 		switch(month) {
 		
 		case 1:
-			System.out.print("January "+ day);
+			System.out.print("January "+ day + " " + year);
 			break;
 		case 2:
-			System.out.print("February "+day);
+			System.out.print("February "+day +" " +year);
 			break;
 		case 3:
-			System.out.print("March "+day);
+			System.out.print("March "+day + " " + year);
 			break;
 		case 4:
-			System.out.print("April "+ day);
+			System.out.print("April "+day +" "+ year);
 			break;
 		case 5:
-			System.out.print("May ");
-			System.out.print(day);
+			System.out.print("May "+day +" "+year);
+			
 			break;
 		case 6:
-			System.out.print("June ");
-			System.out.print(day);
+			System.out.print("June "+day +" "+year);
 			break;
 		case 7:
-			System.out.print("July ");
-			System.out.print(day);
+			System.out.print("July "+day +" "+year);
 			break;
 		case 8:
-			System.out.print("August ");
-			System.out.print(day);
+			System.out.print("August "+day +" "+year);
 			break;
 		case 9:
-			System.out.print("September ");
-			System.out.print(day);
+			System.out.print("September "+day +" "+year);
 			break;
 		case 10:
-			System.out.print("October ");
-			System.out.print(day);
+			System.out.print("October "+day +" "+year);
 			break;
 		case 11:
-			System.out.print("November ");
-			System.out.print(day);
+			System.out.print("November "+day +" "+year);
 			break;
 		case 12:
-			System.out.print("December ");
-			System.out.print(day);
+			System.out.print("December "+day +" "+year);
 			break;
 		default:
 			System.out.println("Invalid Month");
