@@ -18,10 +18,14 @@ public class DateFormatter {
 		int year = s.nextInt();
 		System.out.println("***************");
 		
+		boolean isValidDay =  true;
 		
 		switch(month) {
 		
 		case 1:
+			if(day>31) {
+				isValidDay =false;
+			}
 			System.out.print("January "+ day + " " + year);
 			break;
 		case 2:
@@ -61,6 +65,9 @@ public class DateFormatter {
 			System.out.println("Invalid Month");
 			
 		
+		}
+		if(!isValidDay) {
+			System.out.println("Invalid Day for Given Month");
 		}
 		s.close();
 	}
