@@ -25,14 +25,24 @@ public class DateFormatter {
 		case 1:
 			if(day>31) {
 				isValidDay =false;
-			}
+			}else {
 			System.out.print("January "+ day + " " + year);
+			}
 			break;
 		case 2:
+			int maxDayFeb = (year%4==0 && (year%100 !=0 || year%400 ==0))? 29 : 28;
+			if(day>maxDayFeb) {
+				isValidDay=false;
+			}else {
 			System.out.print("February "+day +" " +year);
+			}
 			break;
 		case 3:
+			if(day>31) {
+				isValidDay=false;
+			}else {
 			System.out.print("March "+day + " " + year);
+			}
 			break;
 		case 4:
 			System.out.print("April "+day +" "+ year);
