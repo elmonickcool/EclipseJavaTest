@@ -17,6 +17,8 @@ public class DateFormatter {
 		System.out.print("Year: ");
 		int year = s.nextInt();
 		System.out.println("***************");
+		
+		
 		switch(month) {
 		
 		case 1:
@@ -33,7 +35,6 @@ public class DateFormatter {
 			break;
 		case 5:
 			System.out.print("May "+day +" "+year);
-			
 			break;
 		case 6:
 			System.out.print("June "+day +" "+year);
@@ -59,9 +60,9 @@ public class DateFormatter {
 		default:
 			System.out.println("Invalid Month");
 			
-		s.close();
+		
 		}
-
+		s.close();
 	}
 
 }
