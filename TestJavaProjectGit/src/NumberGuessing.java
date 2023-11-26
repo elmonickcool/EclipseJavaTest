@@ -29,7 +29,7 @@ public class NumberGuessing {
                 System.out.println("Too high! Try lower than "+ userGuess);
             } else {
                 System.out.println("Congratulations! You guessed the number " + secretNumber + " in " + attempts + " attempts.");
-                break; // Exit the loop if the guess is correct
+                break; 
             }
         }
 
