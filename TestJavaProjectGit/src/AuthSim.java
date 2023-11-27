@@ -15,28 +15,20 @@ public class AuthSim {
 		System.out.print("Password: ");
 		String pass=s.nextLine();
 		
-		int userIndex=-1;
-		int passIndex=-1;
+		boolean isExist = false;
 		
 		for(int i=0;i<authUser.length;i++) {
-			if(authUser[i].equalsIgnoreCase(user)) {
-				userIndex=i;
+			if(user.equals(authUser[i])&&pass.equals(authPass[i])) {
+				isExist=true;
 				break;
 			}
 		}
 		
-		for(int x=0;x<authPass.length;x++) {
-			if(authPass[x].equals(pass)) {
-				passIndex=x;
-				break;
-			}
-		}
+		if(isExist) System.out.println("Welcome "+user);
+		else System.out.println(user + " Not Found");
 		
-		if(userIndex == passIndex && userIndex != 1) {
-			System.out.println("Welcome "+authUser[userIndex]);
-		}else {
-			System.out.println("Account Not Found");
-		}
+		
+		
 		
 		s.close();
 
