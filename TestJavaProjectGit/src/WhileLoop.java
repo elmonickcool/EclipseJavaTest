@@ -12,13 +12,20 @@ public class WhileLoop {
 		String search = s.nextLine();
 		
 		int  i =0;
+		boolean found = false;
 		
 		while(i<names.length) {
 			if(names[i].equalsIgnoreCase(search)) {
 				System.out.println("We found " + names[i]);
-				break;	
+				found =true;
+				break;
 			}
+			
 			i++;
+			
+			if(!found) {
+				System.out.println(search +" not found!");
+			}
 			
 		}
 		s.close();
